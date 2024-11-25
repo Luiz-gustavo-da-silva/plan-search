@@ -1,7 +1,7 @@
 {
     "/api": {
       "target": "https://www.ans.gov.br",
-      "secure": true,
+      "secure": false,
       "changeOrigin": true,
       "pathRewrite": {
         "^/api": ""
