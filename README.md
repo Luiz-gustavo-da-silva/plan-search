@@ -4,9 +4,9 @@ Buscador de plano de saúde.
 
 #Ferramentas
 
-Angular 17+
-ngx-infinite-scroll
-Angular material
+- Angular 17+
+- ngx-infinite-scroll
+- Angular material
 
 # Api
 
