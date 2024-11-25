@@ -1,0 +1,54 @@
+<header class="flex justify-between items-center py-4 px-6">
+  <h1 class="text-xl font-bold text-[#378c77]">Busca Planos</h1>
+  <button
+    class="lg:hidden text-gray-700 focus:outline-none"
+    (click)="toggleMenu()"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16m-7 6h7"
+      />
+    </svg>
+  </button>
+  <nav
+    [class.hidden]="!menuOpen"
+    class="hidden flex flex-col absolute top-16 left-0 w-full bg-white shadow-lg px-6 lg:static lg:flex lg:flex-row lg:items-center lg:gap-6 lg:w-auto lg:shadow-none lg:bg-transparent z-10 lg:px-0"
+  >
+    <a
+      href="#sobre-mim"
+      class="text-gray-700 hover:text-black py-2 font-bold text-[#378c77]"
+      >Home</a
+    >
+    <a
+      href="https://github.com/Luiz-gustavo-da-silva"
+      class="text-gray-700 hover:text-black py-2"
+      >Sobre Mim</a
+    >
+    <a
+      href="https://github.com/Luiz-gustavo-da-silva"
+      class="text-gray-700 hover:text-black py-2"
+      >Outros Projetos</a
+    >
+    <a
+      href="https://github.com/Luiz-gustavo-da-silva"
+      class="text-gray-700 hover:text-black py-2"
+      >Detalhes do Projeto</a
+    >
+  </nav>
+  <a href="https://github.com/Luiz-gustavo-da-silva">
+    <button
+      class="hidden lg:block bg-[#378c77] text-white px-4 py-2 rounded-lg"
+    >
+      Contato
+    </button>
+  </a>
+</header>

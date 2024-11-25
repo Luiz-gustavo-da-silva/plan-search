@@ -1,0 +1,51 @@
+<div class="bg-white border rounded-lg shadow p-4 flex flex-col h-full">
+  <div class="flex items-center gap-4">
+
+    <div
+      class="w-[40px] h-[40px] rounded-full flex items-center justify-center text-white font-bold overflow-hidden"
+      [ngStyle]="{ 'background-color': randomColor }"
+    >
+      {{ getFirstLetter(plano.nome_fantasia) }}
+    </div>
+  
+    <div>
+      <h3 class="font-bold text-lg">
+        {{ plano.nome_fantasia ? plano.nome_fantasia : "-" }}
+      </h3>
+      <p class="text-gray-500 text-sm">
+        {{ plano.classificacao_sigla ? plano.classificacao_sigla : "-" }}
+      </p>
+    </div>
+  </div>
+  
+  <div class="mt-4">
+    <span
+      *ngIf="!plano.ativa"
+      class="bg-red-100 text-red-700 text-xs font-semibold px-2 py-1 rounded-lg mr-2"
+    >
+      Fechado
+    </span>
+    <span
+      *ngIf="plano.ativa"
+      class="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-lg"
+    >
+      Ativa
+    </span>
+  </div>
+
+  <p class="text-sm text-gray-600 mt-4">
+    <span class="text-1xl font-bold">CNPJ:</span> {{ plano.cnpj }}
+  </p>
+  <p class="text-sm text-gray-600">
+    <span class="text-1xl font-bold">Razão Social:</span>
+    {{ plano.razao_social }}
+  </p>
+  <p class="text-sm text-gray-600">
+    <span class="text-1xl font-bold">Registro no ANS:</span>
+    {{ plano.registro_ans }}
+  </p>
+
+  <div class="flex align-bottom justify-end">
+    <button class="bg-[#378c77] text-white px-6 py-2 rounded-lg" (click)="verDetalhes()">+ Info</button>
+  </div>
+</div>
