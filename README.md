@@ -14,4 +14,4 @@ Api pública da Agência Nacional de Saúde Suplementar (ANS)
 
 #  Foto
 
-![Imagem da aplicação](assets/img/capa.png)
+![Imagem da aplicação](/src/assets/img/capa.png)
