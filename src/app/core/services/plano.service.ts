@@ -8,7 +8,7 @@ import { FilterPlan } from '../models/filter-plan-interface';
   providedIn: 'root',
 })
 export class PlanoService {
-  private apiUrl = '/api/operadoras-entity/v1/operadoras';
+  private apiUrl = '/api/proxy';
 
   constructor(private http: HttpClient) {}
 
